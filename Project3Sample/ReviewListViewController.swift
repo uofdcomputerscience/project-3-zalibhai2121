@@ -10,8 +10,12 @@ import UIKit
 
 class ReviewListViewController: UIViewController {
     
+    let reviewService = ReviewService.shared
     
-    
-    
+    func fetchReviews() {
+        reviewService.fetchReviews { [weak self] in
+            print(String(describing: self?.reviewService.reviews))
+        }
+    }
     
 }

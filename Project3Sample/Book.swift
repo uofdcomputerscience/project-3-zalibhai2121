@@ -16,6 +16,6 @@ struct Book: Codable {
     let imageURLString: String
     
     var imageURL: URL? {
-        return URL(string: imageURLString)
+        return URL(string: imageURLString ?? "http://www.4motiondarlington.org/wp-content/uploads/2013/06/No-image-found.jpg")
     }
 }
