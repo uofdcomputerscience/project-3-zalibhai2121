@@ -11,30 +11,27 @@ import UIKit
 class BookDetailViewController: UIViewController {
     
     @IBOutlet weak var BookImage: UIImageView!
-    @IBOutlet weak var BookName: UILabel!
-    @IBOutlet weak var BookArthor: UILabel!
-    @IBOutlet weak var BookPublished: UILabel!
+    @IBOutlet weak var Arthur: UILabel!
+    @IBOutlet weak var PublishedYear: UILabel!
+    @IBOutlet weak var BookTitle: UILabel!
+    @IBOutlet weak var AddReview: UIButton!
     
-    @IBOutlet weak var Continue: UIButton!
     
-    var book: Book?
-    var bookService: BookService?
-       
-    var bookTitle: String?
+    let bookService = BookService.shared
+    var Title: String?
+    var Author: String?
+    var Published: String?
+    var Id = -1
+    var Image = UIImage(named: "noImg.jpg")
+    
+    
     override func viewDidLoad() {
-        BookName.text = book?.title
-        BookArthor.text = book?.author
-        BookPublished.text = book?.published
-           
-        bookService!.image(for: book!) { (getbook, image) in
-            if self.book!.id == getbook.id {
-                DispatchQueue.main.async {
-                    self.BookImage.image = image
-                   }
-               }
-           }
-           
-           
-       }
+        super.viewDidLoad()
+        BookTitle.text = Title
+        Arthur.text = Author
+        PublishedYear.text = Published
+        BookImage.image = Image
+        
+    }
 }
 
