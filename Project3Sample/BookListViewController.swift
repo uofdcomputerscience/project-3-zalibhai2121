@@ -17,7 +17,6 @@ class BookListViewController: UIViewController, UICollectionViewDelegate{
     var Title: String?
     var Author: String?
     var Published: String?
-    var Id = -1
     var Image = UIImage(named: "")
     
     
@@ -36,9 +35,7 @@ class BookListViewController: UIViewController, UICollectionViewDelegate{
             Title = "Title: " + book.title
             Author = "Author: " + book.author
             Published = "Published: " + book.published
-            if book.id != nil {
-                Id = book.id!
-            }
+
             if let viewImage = cell as? BookCell{
                 Image = viewImage.BookImage.image
             }
@@ -53,7 +50,6 @@ class BookListViewController: UIViewController, UICollectionViewDelegate{
                 book.Author = Author
                 book.Published = Published
                 book.Image = Image
-                book.Id = Id
             }
         }
     }

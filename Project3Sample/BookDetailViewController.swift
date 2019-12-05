@@ -21,7 +21,6 @@ class BookDetailViewController: UIViewController {
     var Title: String?
     var Author: String?
     var Published: String?
-    var Id = -1
     var Image = UIImage(named: "")
     
     
