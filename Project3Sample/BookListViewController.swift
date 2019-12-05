@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BookListViewController: UIViewController, UICollectionViewDelegate{
+class BookListViewController: UIViewController{
     
     @IBOutlet weak var BookList: UICollectionView!
     
@@ -102,5 +102,8 @@ extension BookListViewController: UICollectionViewDataSource {
             return cell
         }
     
+    
+}
+extension BookListViewController: UICollectionViewDelegate {
     
 }
