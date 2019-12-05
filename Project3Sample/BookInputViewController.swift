@@ -17,6 +17,7 @@ class BookInputViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var ImageURL: UITextField!
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         BookTitle.text = ""
         Author.text = ""
         PublishedYear.text = ""

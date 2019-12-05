@@ -20,6 +20,7 @@ class ReviewInputViewController: UIViewController, UITextFieldDelegate {
     var book = -1
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         BookTitle.text = ""
         ReviewerName.text = ""
         BookReview.text = ""
