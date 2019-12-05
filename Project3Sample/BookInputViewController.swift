@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BookInputViewController: UIViewController, UITextFieldDelegate {
+class BookInputViewController: UIViewController {
     
     let bookService = BookService.shared
     @IBOutlet weak var BookTitle: UITextField!
@@ -40,4 +40,8 @@ class BookInputViewController: UIViewController, UITextFieldDelegate {
         }
     }
 
+}
+
+extension BookInputViewController: UITextFieldDelegate {
+    
 }

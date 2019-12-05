@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ReviewInputViewController: UIViewController, UITextFieldDelegate {
+class ReviewInputViewController: UIViewController {
     
     @IBOutlet weak var BookTitle: UITextField!
     
@@ -40,5 +40,8 @@ class ReviewInputViewController: UIViewController, UITextFieldDelegate {
         }
     }
 
+    
+}
+extension ReviewInputViewController: UITextFieldDelegate {
     
 }

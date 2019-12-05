@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ReviewListViewController: UIViewController, UITableViewDelegate {
+class ReviewListViewController: UIViewController {
     @IBOutlet weak var ReviewList: UITableView!
     
     var Book:String = ""
@@ -56,10 +56,10 @@ class ReviewListViewController: UIViewController, UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
            let review = reviewService.reviews[indexPath.item]
-           Book = "Book: " + bookService.books[review.bookId].title
-           Title = "Title: " + review.title
-           ReviewerName = "Reviewer: " + review.reviewer
-           Body = "" + review.body
+           Book =  bookService.books[review.bookId].title
+           Title =  review.title
+           ReviewerName = review.reviewer
+           Body =  review.body
            performSegue(withIdentifier: "ReviewList", sender: self)
        }
        
@@ -83,14 +83,18 @@ extension ReviewListViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewBookCell", for: indexPath)
             if let ReviewCell = cell as? ReviewBookCell{
                 let review = reviewService.reviews[indexPath.item]
-                ReviewCell.BookTitle.text = "Book: " + bookService.books[review.bookId].title
-                ReviewCell.ReviewTitle.text = "Title: " + review.title
-                ReviewCell.ReviewerName.text = "Reviewer: " + review.reviewer
+                ReviewCell.BookTitle.text =  bookService.books[review.bookId].title
+                ReviewCell.ReviewTitle.text =  review.title
+                ReviewCell.ReviewerName.text =  review.reviewer
 
             }
             
             return cell
         }
     
+    
+}
+
+extension ReviewListViewController: UITableViewDelegate {
     
 }
