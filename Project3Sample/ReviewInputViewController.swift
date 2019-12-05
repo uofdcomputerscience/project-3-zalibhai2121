@@ -17,7 +17,6 @@ class ReviewInputViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var BookReview: UITextField!
     
     let reviewService = ReviewService.shared
-    var book = -1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +35,7 @@ class ReviewInputViewController: UIViewController, UITextFieldDelegate {
     }
     
     func submitReview() {
-        let review = Review(id: nil, bookId: book, date: Date(), reviewer: ReviewerName.text!, title: BookTitle.text!, body: BookReview.text!)
+        let review = Review(id: nil, bookId: -1, date: Date(), reviewer: ReviewerName.text!, title: BookTitle.text!, body: BookReview.text!)
         reviewService.createReview(review: review) {
         }
     }

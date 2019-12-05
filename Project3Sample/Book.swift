@@ -16,6 +16,6 @@ struct Book: Codable {
     let imageURLString: String
     
     var imageURL: URL? {
-        return URL(string: imageURLString ?? "")
+        return URL(string: imageURLString )
     }
 }

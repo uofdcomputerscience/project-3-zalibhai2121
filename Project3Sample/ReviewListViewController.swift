@@ -11,10 +11,10 @@ import UIKit
 class ReviewListViewController: UIViewController, UITableViewDelegate {
     @IBOutlet weak var ReviewList: UITableView!
     
-    var Book = "Book: "
-    var Title = "Title: "
-    var Reviewer = "Reviewer: "
-    var Body = ""
+    var Book:String = ""
+    var Title:String = ""
+    var ReviewerName:String = ""
+    var Body: String = ""
     
     let reviewService = ReviewService.shared
     let bookService = BookService.shared
@@ -58,7 +58,7 @@ class ReviewListViewController: UIViewController, UITableViewDelegate {
            let review = reviewService.reviews[indexPath.item]
            Book = "Book: " + bookService.books[review.bookId].title
            Title = "Title: " + review.title
-           Reviewer = "Reviewer: " + review.reviewer
+           ReviewerName = "Reviewer: " + review.reviewer
            Body = "" + review.body
            performSegue(withIdentifier: "ReviewList", sender: self)
        }
@@ -68,7 +68,7 @@ class ReviewListViewController: UIViewController, UITableViewDelegate {
                if let review = segue.destination as? ReviewDetailViewController {
                    review.Title = Book
                    review.Title = Title
-                   review.Reviewer = Reviewer
+                   review.ReviewerNames = ReviewerName
                    review.Body = Body
                }
            }
