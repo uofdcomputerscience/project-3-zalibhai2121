@@ -39,9 +39,5 @@ class BookInputViewController: UIViewController, UITextFieldDelegate {
         bookService.createBook(book: book) {
         }
     }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
+
 }

@@ -9,10 +9,10 @@
 import UIKit
 
 class ReviewDetailViewController: UIViewController {
-    var Book = " "
-    var Title = " "
-    var Reviewer = ""
-    var Body = ""
+    var Book:String =  " "
+    var Title:String =  " "
+    var ReviewerNames:String = ""
+    var Body:String =  ""
     
     @IBOutlet weak var BookName: UILabel!
     @IBOutlet weak var BookReviewTitle: UILabel!
@@ -23,7 +23,7 @@ class ReviewDetailViewController: UIViewController {
         super.viewDidLoad()
         BookName.text = Book
         BookReviewTitle.text = Title
-        ReviewerName.text = Reviewer
+        ReviewerName.text = ReviewerNames
         ReviewBody.text = Body
     }
     
