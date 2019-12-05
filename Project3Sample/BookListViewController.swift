@@ -23,7 +23,7 @@ class BookListViewController: UIViewController, UICollectionViewDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.BookList.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "UICollectionViewCell")
+        self.BookList.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "BookCell")
         self.BookList.dataSource = self
         BookList.delegate = self
         BookList.refreshControl = refreshControl
