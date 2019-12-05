@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BookListViewController: UIViewController{
+class BookListViewController: UIViewController {
     
     @IBOutlet weak var BookList: UICollectionView!
     
@@ -17,7 +17,7 @@ class BookListViewController: UIViewController{
     var Title: String?
     var Author: String?
     var Published: String?
-    var Image = UIImage(named: "")
+    var Image = UIImage(contentsOfFile: "")
     
     
     override func viewDidLoad() {
