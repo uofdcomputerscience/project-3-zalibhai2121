@@ -22,7 +22,7 @@ class BookDetailViewController: UIViewController {
     var Author: String?
     var Published: String?
     var Id = -1
-    var Image = UIImage(named: "noImg.jpg")
+    var Image = UIImage(named: "")
     
     
     override func viewDidLoad() {
