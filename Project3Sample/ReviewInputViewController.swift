@@ -30,12 +30,10 @@ class ReviewInputViewController: UIViewController {
     }
     @IBAction func ButtonPressed(_ sender: Any) {
         submitReview()
-        _ = navigationController?.popViewController(animated: true)
-        dismiss(animated: true, completion: nil)
     }
     
     func submitReview() {
-        let review = Review(id: nil, bookId: -1, date: Date(), reviewer: ReviewerName.text!, title: BookTitle.text!, body: BookReview.text!)
+        let review = Review(id: nil, bookId: -1, date: nil, reviewer: ReviewerName.text!, title: BookTitle.text!, body: BookReview.text!)
         reviewService.createReview(review: review) {
         }
     }

@@ -18,9 +18,9 @@ class BookInputViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        BookTitle.text = ""
-        Author.text = ""
-        PublishedYear.text = ""
+        BookTitle.text = "Book: "
+        Author.text = "Author: "
+        PublishedYear.text = "Year: "
         ImageURL.text = ""
         
         self.BookTitle.delegate = self

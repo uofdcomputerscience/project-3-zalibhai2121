@@ -17,6 +17,4 @@ class ReviewBookCell: UITableViewCell {
     
     @IBOutlet weak var ReviewerName: UILabel!
     
-    var book: Book?
-    var review: Review?
 }

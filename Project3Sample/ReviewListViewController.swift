@@ -11,9 +11,9 @@ import UIKit
 class ReviewListViewController: UIViewController {
     @IBOutlet weak var ReviewList: UITableView!
     
-    var Book:String = ""
-    var Title:String = ""
-    var ReviewerName:String = ""
+    var Book:String = "Book: "
+    var Title:String = "Title: "
+    var ReviewerName:String = "Name: "
     var Body: String = ""
     
     let reviewService = ReviewService.shared
@@ -56,20 +56,20 @@ class ReviewListViewController: UIViewController {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
            let review = reviewService.reviews[indexPath.item]
-           Book =  bookService.books[review.bookId].title
-           Title =  review.title
-           ReviewerName = review.reviewer
-           Body =  review.body
+           Book =  "Book: " + bookService.books[review.bookId].title
+           Title = "Title: " +  review.title
+           ReviewerName = "Name: " + review.reviewer
+           Body = "" + review.body
            performSegue(withIdentifier: "ReviewList", sender: self)
        }
        
-       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-           if segue.identifier == "ReviewList" {
-               if let review = segue.destination as? ReviewDetailViewController {
-                   review.Title = Book
-                   review.Title = Title
-                   review.ReviewerNames = ReviewerName
-                   review.Body = Body
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ReviewList" {
+            if let review = segue.destination as? ReviewDetailViewController {
+                review.Title = Book
+                review.Title = Title
+                review.ReviewerNames = ReviewerName
+                review.Body = Body
                }
            }
        }

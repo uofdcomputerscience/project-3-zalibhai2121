@@ -9,9 +9,9 @@
 import UIKit
 
 class ReviewDetailViewController: UIViewController {
-    var Book:String =  " "
-    var Title:String =  " "
-    var ReviewerNames:String = ""
+    var Book:String =  "Book: "
+    var Title:String =  "Title:  "
+    var ReviewerNames:String = "Name: "
     var Body:String =  ""
     
     @IBOutlet weak var BookName: UILabel!
