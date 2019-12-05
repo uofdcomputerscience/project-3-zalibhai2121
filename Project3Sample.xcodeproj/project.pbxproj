@@ -20,7 +20,6 @@
 		4670DA9423809A4700487601 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670DA9323809A4700487601 /* Review.swift */; };
 		4670DA9623809A5000487601 /* BookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670DA9523809A5000487601 /* BookService.swift */; };
 		4670DA9823809A5900487601 /* ReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670DA9723809A5900487601 /* ReviewService.swift */; };
-		4670DA9A2380A28200487601 /* DataTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670DA992380A28200487601 /* DataTestViewController.swift */; };
 		511CA9ED23975E12005BDDDD /* ReviewBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511CA9EC23975E12005BDDDD /* ReviewBookCell.swift */; };
 		511CA9EF239879E9005BDDDD /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511CA9EE239879E9005BDDDD /* BookCell.swift */; };
 		511CA9F123988526005BDDDD /* ReviewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511CA9F023988526005BDDDD /* ReviewListViewController.swift */; };
@@ -42,7 +41,6 @@
 		4670DA9323809A4700487601 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		4670DA9523809A5000487601 /* BookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookService.swift; sourceTree = "<group>"; };
 		4670DA9723809A5900487601 /* ReviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewService.swift; sourceTree = "<group>"; };
-		4670DA992380A28200487601 /* DataTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTestViewController.swift; sourceTree = "<group>"; };
 		511CA9EC23975E12005BDDDD /* ReviewBookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewBookCell.swift; sourceTree = "<group>"; };
 		511CA9EE239879E9005BDDDD /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		511CA9F023988526005BDDDD /* ReviewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListViewController.swift; sourceTree = "<group>"; };
@@ -95,7 +93,6 @@
 				4670DA9323809A4700487601 /* Review.swift */,
 				4670DA9523809A5000487601 /* BookService.swift */,
 				4670DA9723809A5900487601 /* ReviewService.swift */,
-				4670DA992380A28200487601 /* DataTestViewController.swift */,
 			);
 			path = Project3Sample;
 			sourceTree = "<group>";
@@ -174,7 +171,6 @@
 				4670DA9823809A5900487601 /* ReviewService.swift in Sources */,
 				4670DA86238099DC00487601 /* BookListViewController.swift in Sources */,
 				4670DA72238099BC00487601 /* AppDelegate.swift in Sources */,
-				4670DA9A2380A28200487601 /* DataTestViewController.swift in Sources */,
 				4670DA8A23809A0600487601 /* BookInputViewController.swift in Sources */,
 				4670DA9423809A4700487601 /* Review.swift in Sources */,
 				511CA9ED23975E12005BDDDD /* ReviewBookCell.swift in Sources */,
